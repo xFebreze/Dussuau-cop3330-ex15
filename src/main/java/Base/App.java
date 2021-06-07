@@ -36,7 +36,19 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+        String password = "PogO123";
 
-        
+        //inputs
+        System.out.print("What is your username? ");
+        String username = input.nextLine();
+        System.out.print("What is your password? ");
+        String attempted_pass = input.nextLine();
+
+        if(attempted_pass.equals(password)){
+            System.out.println("Welcome!");
+        }else{
+            System.out.println("I don't know you.");
+        }
+
     }
 }
